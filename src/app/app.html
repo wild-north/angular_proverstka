@@ -1,0 +1,13 @@
+<div class="main-container">
+  <fountain-header title="$app.title"></fountain-header>
+  <div class="main">
+    <select
+      ng-options="city.value as city.name for city in $app.cities"
+      ng-model="$app.selectedCity"
+    >
+      <option value="">Выберите город</option>
+    </select>
+  	<ui-view></ui-view>
+  </div>
+  <fountain-footer></fountain-footer>
+</div>
