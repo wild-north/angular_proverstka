@@ -38,20 +38,29 @@ function routesConfig($stateProvider, $urlRouterProvider) {
     * */
     .state('app.city.current', {
       url: 'current/',
-      component: 'current'
+      component: 'current',
+      params: {
+        apiUrl: { value: '' }
+      },
     })
     /*
      * Погода на 5 дней
      * */
     .state('app.city.five', {
       url: 'five/',
-      component: 'five'
+      component: 'five',
+      params: {
+        apiUrl: { value: '' }
+      },
     })
     /*
      * Погода на 16 дней
      * */
     .state('app.city.sixteen', {
       url: 'sixteen/',
-      component: 'sixteen'
+      component: 'sixteen',
+      params: {
+        apiUrl: { value: '' }
+      },
     });
 }

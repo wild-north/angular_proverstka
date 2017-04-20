@@ -12,6 +12,8 @@ import City from './app/city';
 import Current from './app/city/current';
 import Five from './app/city/five';
 import Sixteen from './app/city/sixteen';
+import WeatherTypes from './app/services/weather-types.service';
+import Api from './app/services/api.service';
 
 import './index.scss';
 
@@ -25,4 +27,6 @@ angular
   .component('five', Five)
   .component('sixteen', Sixteen)
   .component('fountainHeader', header)
-  .component('fountainFooter', footer);
+  .component('fountainFooter', footer)
+  .service('WeatherTypes', WeatherTypes)
+  .service('Api', Api);

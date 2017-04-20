@@ -1,1 +1,8 @@
-<h1>Current weather component</h1>
+<h1>Current weather:</h1>
+
+<img src="http://openweathermap.org/img/w/{{current.icon}}.png" alt="icon">
+
+<dl>
+  <dt>Time</dt>
+  <dd>{{current.time | date: 'MMM dd yyyy HH:mm'}}</dd>
+</dl>
